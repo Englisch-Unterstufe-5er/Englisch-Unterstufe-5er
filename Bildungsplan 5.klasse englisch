@@ -1,0 +1,1356 @@
+{
+  "bildungsplan":
+    "bundesland": "Baden-Württemberg",
+    "schulart": "Gymnasium",
+    "fach": "Englisch als erste Fremdsprache",
+    "klassenstufe": "5/6",
+    "version": "Bildungsplan 2016 in der Fassung vom 10.03.2025 (V2)",
+    "niveau": "A2/A2+",
+    "beschreibung": "Gemeinsamer europäischer Referenzrahmen: Elementare Sprachverwendung",
+    "stand": "Oktober 2025"
+  },
+  
+  "themenbereiche": [
+    {
+      "id": 1,
+      "titel": "Soziokulturelles Orientierungswissen / Themen",
+      "beschreibung": "Kenntnisse über Alltagskultur und Lebensbedingungen in englischsprachigen Ländern",
+      "unterthemen": [
+        {
+          "id": "1.1",
+          "titel": "Alltagskultur und Lebensbedingungen junger Menschen",
+          "themen": [
+            {
+              "thema": "Familie",
+              "beispiele": ["Familienmitglieder", "Familienbeziehungen", "Alltag in der Familie"]
+            },
+            {
+              "thema": "Schule",
+              "beispiele": ["Schulalltag", "Fächer", "Stundenplan", "Klassenkameraden", "Lehrer"]
+            },
+            {
+              "thema": "Tiere",
+              "beispiele": ["Haustiere", "Lieblingstiere", "Tierbeschreibungen"]
+            },
+            {
+              "thema": "Essen und Essensgewohnheiten",
+              "beispiele": ["Mahlzeiten", "Lieblingsessen", "Rezepte", "Restaurants"]
+            },
+            {
+              "thema": "Wetter",
+              "beispiele": ["Wetterberichte", "Jahreszeiten", "Klima"]
+            },
+            {
+              "thema": "Hobbies",
+              "beispiele": ["Freizeitaktivitäten", "Sport", "Musik", "Lesen", "Gaming"]
+            },
+            {
+              "thema": "Einkaufen",
+              "beispiele": ["Geschäfte", "Preise", "Geld", "Shopping"]
+            },
+            {
+              "thema": "Wohnverhältnisse",
+              "beispiele": ["Zuhause", "Zimmer", "Möbel", "Haus/Wohnung"]
+            },
+            {
+              "thema": "Bräuche",
+              "beispiele": ["Traditionen", "Gewohnheiten"],
+              "hinweis": "Laut Lesehilfe 2025 eventuell erst später"
+            },
+            {
+              "thema": "Feste",
+              "beispiele": ["Geburtstag", "Weihnachten", "Halloween", "Ostern", "Thanksgiving"]
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "titel": "Besonderheiten von Städten und Regionen",
+          "themen": [
+            {
+              "thema": "Zwei Städte",
+              "beispiele": ["London", "Edinburgh", "Cardiff", "Belfast"],
+              "beschreibung": "Geografische und gegebenenfalls historische Gegebenheiten"
+            },
+            {
+              "thema": "Zwei Regionen",
+              "beispiele": ["England", "Schottland", "Wales", "Nordirland"],
+              "hinweis": "Laut Lesehilfe 2025 nur eine Region verpflichtend"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "titel": "Zielkultur",
+          "schwerpunkt": "Großbritannien (GB)",
+          "beschreibung": "Erste Einblicke in englischsprachige Länder und Kulturen"
+        }
+      ]
+    },
+    
+    {
+      "id": 2,
+      "titel": "Interkulturelle kommunikative Kompetenz",
+      "beschreibung": "Elementares soziokulturelles Orientierungswissen und angemessenes Verhalten in der Zielkultur",
+      "kompetenzen": [
+        {
+          "id": "2.1",
+          "titel": "Orientierungswissen",
+          "teilkompetenzen": [
+            "Sich zu Themen einer Zielkultur äußern und austauschen",
+            "Aspekte des Alltags in eigener und Zielkultur vergleichen",
+            "Zu ausgewählten Themen die eigene Meinung äußern"
+          ]
+        },
+        {
+          "id": "2.2",
+          "titel": "Kulturspezifische Verhaltensweisen und Höflichkeitskonventionen",
+          "bereiche": [
+            {
+              "bereich": "Begrüßung und Vorstellung",
+              "redemittel": [
+                "Good morning/afternoon/evening",
+                "My name is...",
+                "Nice to meet you",
+                "This is my friend...",
+                "How are you?",
+                "I'm fine, thank you"
+              ]
+            },
+            {
+              "bereich": "Bitten und Danken",
+              "redemittel": [
+                "May I...?",
+                "Could you...?",
+                "Thank you (very much)",
+                "You're welcome",
+                "Please"
+              ]
+            },
+            {
+              "bereich": "Zustimmen und Ablehnen",
+              "redemittel": [
+                "I agree/disagree",
+                "Yes, please",
+                "No, thanks",
+                "That's right",
+                "I don't think so"
+              ]
+            },
+            {
+              "bereich": "Entschuldigen",
+              "redemittel": [
+                "I'm sorry",
+                "Excuse me",
+                "Sorry about that"
+              ]
+            },
+            {
+              "bereich": "Verabschieden",
+              "redemittel": [
+                "Goodbye",
+                "See you (later)",
+                "Have a nice day",
+                "Take care"
+              ]
+            }
+          ],
+          "alltagssituationen": [
+            {
+              "situation": "Restaurantbesuch",
+              "aktivitäten": ["Bestellen", "Bezahlen", "Trinkgeld"]
+            },
+            {
+              "situation": "Einkaufen",
+              "aktivitäten": ["Nach Preisen fragen", "Bezahlen", "Um Hilfe bitten"]
+            }
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": 3,
+      "titel": "Funktionale kommunikative Kompetenz",
+      "beschreibung": "Praktische Anwendung der Sprache in verschiedenen Kommunikationssituationen",
+      "bereiche": [
+        {
+          "id": "3.1",
+          "titel": "Hör-/Hörsehverstehen",
+          "niveau": "A2/A2+",
+          "beschreibung": "Einsprachiger Unterrichtssituation folgen, didaktisierte Texte verstehen",
+          "textsorten": [
+            "Classroom discourse (Unterrichtsgespräche)",
+            "An- und Durchsagen",
+            "Lieder",
+            "Dialoge",
+            "Geschichten",
+            "Filmsequenzen"
+          ],
+          "teilkompetenzen": [
+            {
+              "kompetenz": "Hauptaussagen entnehmen",
+              "beispiele": ["Worum geht es?", "Was ist das Thema?"]
+            },
+            {
+              "kompetenz": "Explizite Detailinformationen entnehmen",
+              "beispiele": ["Wer?", "Was?", "Wann?", "Wo?"]
+            },
+            {
+              "kompetenz": "Visuelle und auditive Informationen nutzen",
+              "beispiele": ["Intonation", "Gestik", "Mimik", "Bilder"]
+            },
+            {
+              "kompetenz": "Verschiedene Hörstile nutzen",
+              "strategien": [
+                "Listening for gist (Globalverstehen)",
+                "Listening for detail (Detailverstehen)"
+              ]
+            }
+          ],
+          "schwierigkeitsfaktoren": [
+            "Visuelle Unterstützung",
+            "Vertrautheit mit dem Thema",
+            "Menge unbekannter Wörter",
+            "Sprechgeschwindigkeit",
+            "Anzahl der Sprecher",
+            "Klarheit der Aussprache"
+          ],
+          "nicht_in_klasse5": [
+            "Die Intention entnehmen",
+            "Implizite Detailinformationen",
+            "Beziehungen zwischen Sprechenden verstehen",
+            "Vorhersagen über weiteren Inhalt formulieren"
+          ]
+        },
+        
+        {
+          "id": "3.2",
+          "titel": "Leseverstehen",
+          "niveau": "A2/A2+",
+          "beschreibung": "Einfache authentische und didaktisierte Texte verstehen",
+          "textsorten": [
+            "Brief",
+            "E-Mail",
+            "Broschüre",
+            "Beschreibung",
+            "Interview",
+            "Geschichte",
+            "Liedtext",
+            "Comic",
+            "Dialogszene",
+            "Märchen"
+          ],
+          "teilkompetenzen": [
+            {
+              "kompetenz": "Hauptaussagen entnehmen",
+              "beschreibung": "Den Kern eines Textes verstehen"
+            },
+            {
+              "kompetenz": "Explizite Detailinformationen entnehmen",
+              "beschreibung": "Konkrete Informationen im Text finden"
+            },
+            {
+              "kompetenz": "Sinnzusammenhänge erkennen",
+              "arten": ["additiv (und)", "temporal (dann)", "kausal (weil)"]
+            }
+          ],
+          "lesestrategien": [
+            {
+              "strategie": "Skimming",
+              "beschreibung": "Text überfliegen, um Hauptidee zu erfassen"
+            },
+            {
+              "strategie": "Scanning",
+              "beschreibung": "Text nach spezifischen Informationen durchsuchen"
+            },
+            {
+              "strategie": "Reading for gist",
+              "beschreibung": "Globalverstehen"
+            },
+            {
+              "strategie": "Reading for detail",
+              "beschreibung": "Detailverstehen"
+            }
+          ],
+          "texterschließungstechniken": [
+            "Visual clues (Bilder, Überschriften)",
+            "Markierungen",
+            "W-Fragen stellen",
+            "Überschriften nutzen"
+          ],
+          "worterschließungstechniken": [
+            "Cognates (ähnliche Wörter: family - Familie)",
+            "Einfache Präfixe (un-happy)",
+            "Einfache Suffixe (teach-er)"
+          ],
+          "ganzschrift": {
+            "anzahl": "Mindestens eine",
+            "niveau": "A2",
+            "beispiele": ["Jugendliteratur", "Adaptierte Klassiker", "Readers"]
+          },
+          "nicht_in_klasse5": [
+            "Randnotizen als Texterschließungstechnik",
+            "Beziehungen zwischen Personen verstehen",
+            "Vorhersagen über weiteren Inhalt"
+          ]
+        },
+        
+        {
+          "id": "3.3",
+          "titel": "Sprechen – an Gesprächen teilnehmen",
+          "niveau": "A2/A2+",
+          "beschreibung": "In einfachen Standardsituationen an Gesprächen teilnehmen",
+          "gesprächssituationen": [
+            "Kennenlerngespräche",
+            "Verkaufsgespräche",
+            "Alltagsgespräche",
+            "Telefongespräche (einfach)"
+          ],
+          "teilkompetenzen": [
+            {
+              "kompetenz": "Gespräche führen",
+              "funktionen": [
+                "Gespräch beginnen",
+                "Gespräch fortführen",
+                "Gespräch beenden"
+              ]
+            },
+            {
+              "kompetenz": "Informationen austauschen",
+              "beispiele": [
+                "Über Hobbies sprechen",
+                "Pläne besprechen",
+                "Meinungen äußern"
+              ]
+            },
+            {
+              "kompetenz": "Wünsche und Bitten formulieren",
+              "redemittel": [
+                "I would like to...",
+                "Could you...?",
+                "May I...?"
+              ]
+            },
+            {
+              "kompetenz": "Bei Problemen nachfragen",
+              "classroom_phrases": [
+                "Can you repeat that, please?",
+                "What does ... mean?",
+                "I don't understand",
+                "Could you speak more slowly?"
+              ]
+            }
+          ],
+          "nicht_in_klasse5": [
+            "Spontan auf (Rück-)Fragen reagieren",
+            "Sich auf etwas einigen",
+            "Vorschläge formulieren"
+          ]
+        },
+        
+        {
+          "id": "3.4",
+          "titel": "Sprechen – zusammenhängendes monologisches Sprechen",
+          "niveau": "A2/A2+",
+          "beschreibung": "In einfacher Form über altersgerechte Themen sprechen",
+          "themen": [
+            {
+              "thema": "Eigene Person",
+              "beispiele": ["Name", "Alter", "Wohnort", "Familie", "Hobbies"]
+            },
+            {
+              "thema": "Lebenswelt",
+              "beispiele": ["Schule", "Freunde", "Zuhause", "Freizeitaktivitäten"]
+            },
+            {
+              "thema": "Persönliches",
+              "beispiele": ["Erlebnisse", "Ereignisse", "Pläne"]
+            },
+            {
+              "thema": "Beschreibungen",
+              "beispiele": ["Personen", "Orte", "Gegenstände", "Tätigkeiten"]
+            }
+          ],
+          "teilkompetenzen": [
+            {
+              "kompetenz": "Textinhalte wiedergeben",
+              "beispiele": ["Geschichte nacherzählen", "Film zusammenfassen"]
+            },
+            {
+              "kompetenz": "Vorlieben und Abneigungen nennen",
+              "redemittel": [
+                "I really like...",
+                "I love...",
+                "I don't like...",
+                "I hate...",
+                "My favourite ... is..."
+              ]
+            },
+            {
+              "kompetenz": "Präsentieren",
+              "beschreibung": "Vor Zuhörern zu vertrautem Thema sprechen",
+              "hilfsmittel": ["Plakat", "Realien", "Bilder", "Notizen"]
+            }
+          ],
+          "strategien": [
+            "Notizen verwenden",
+            "Einfache Kompensationsstrategien bei Wortschatzlücken",
+            "Pausen machen ist in Ordnung"
+          ],
+          "nicht_in_klasse5": [
+            "Eigene Meinung kurz begründen",
+            "Hilfsmittel bei Überarbeitung nutzen"
+          ]
+        },
+        
+        {
+          "id": "3.5",
+          "titel": "Schreiben",
+          "niveau": "A2/A2+",
+          "beschreibung": "Kurze und einfache Texte situations- und adressatengerecht verfassen",
+          "textsorten": [
+            {
+              "kategorie": "Persönliche Korrespondenz",
+              "textsorten": [
+                {
+                  "typ": "Postkarte",
+                  "elemente": ["Anrede", "Grüße", "Unterschrift"]
+                },
+                {
+                  "typ": "E-Mail",
+                  "elemente": ["Betreff", "Anrede", "Text", "Grußformel"]
+                },
+                {
+                  "typ": "Mitteilung/Text message",
+                  "elemente": ["Kurze Info", "Informal"]
+                },
+                {
+                  "typ": "Einladung",
+                  "elemente": ["Anlass", "Zeit", "Ort", "RSVP"]
+                },
+                {
+                  "typ": "Glückwunschkarte",
+                  "elemente": ["Anlass", "Wünsche"]
+                }
+              ]
+            },
+            {
+              "kategorie": "Beschreibungen und Berichte",
+              "textsorten": [
+                {
+                  "typ": "Brief",
+                  "inhalte": ["Persönliche Erfahrungen", "Ereignisse"]
+                },
+                {
+                  "typ": "Tagesablauf",
+                  "inhalte": ["Chronologische Beschreibung", "Tätigkeiten"]
+                },
+                {
+                  "typ": "Sehenswürdigkeit",
+                  "inhalte": ["Beschreibung", "Lage", "Besonderheiten"]
+                }
+              ]
+            },
+            {
+              "kategorie": "Meinungsäußerungen",
+              "textsorten": [
+                {
+                  "typ": "Chat",
+                  "inhalte": ["Meinungen", "Zustimmung", "Ablehnung"]
+                },
+                {
+                  "typ": "Vorlieben und Abneigungen",
+                  "redemittel": [
+                    "I like...",
+                    "I don't like...",
+                    "My favourite..."
+                  ]
+                }
+              ]
+            },
+            {
+              "kategorie": "Kreatives Schreiben",
+              "textsorten": [
+                {
+                  "typ": "Kurze Geschichten",
+                  "beispiele": ["Abenteuergeschichte", "Märchen"],
+                  "hilfsmittel": ["Schlüsselbegriffe", "Bildvorgaben"]
+                },
+                {
+                  "typ": "Szenen",
+                  "inhalte": ["Dialoge", "Regieanweisungen"]
+                },
+                {
+                  "typ": "Interview",
+                  "struktur": ["Fragen", "Antworten"]
+                }
+              ]
+            }
+          ],
+          "konnektoren": [
+            {
+              "typ": "Additiv",
+              "beispiele": ["and", "also", "too"]
+            },
+            {
+              "typ": "Temporal",
+              "beispiele": ["then", "before", "after", "when", "until"]
+            },
+            {
+              "typ": "Kausal",
+              "beispiele": ["because", "so"]
+            }
+          ],
+          "methoden": [
+            {
+              "methode": "Brainstorming",
+              "beschreibung": "Ideen sammeln"
+            },
+            {
+              "methode": "Mindmap",
+              "beschreibung": "Ideen visuell strukturieren"
+            },
+            {
+              "methode": "Keywords",
+              "beschreibung": "Schlüsselwörter notieren"
+            }
+          ],
+          "hilfsmittel": [
+            "Wörterlisten",
+            "Useful phrases",
+            "Schulbuch",
+            "Zweisprachiges Wörterbuch"
+          ],
+          "nicht_in_klasse5": [
+            "Eigene Meinung kurz begründen",
+            "Gedichte selbst verfassen",
+            "Cluster als Methode"
+          ]
+        },
+        
+        {
+          "id": "3.6",
+          "titel": "Mediation (Sprachmittlung)",
+          "niveau": "A2/A2+",
+          "beschreibung": "In einfachen zweisprachigen Situationen sinngemäß vermitteln",
+          "richtungen": [
+            "Deutsch → Englisch (mündlich und schriftlich)",
+            "Englisch → Deutsch (hauptsächlich schriftlich)"
+          ],
+          "situationen": [
+            "Ausländischen Gast beim Einkaufen helfen",
+            "Deutsches Rezept auf Englisch erklären",
+            "Englische Durchsage übersetzen",
+            "Brief/E-Mail-Inhalt übertragen"
+          ],
+          "teilkompetenzen": [
+            {
+              "kompetenz": "Informationen übertragen",
+              "arten": ["Gehörte Informationen", "Gelesene Informationen"]
+            },
+            {
+              "kompetenz": "Höflichkeitskonventionen beachten",
+              "beispiele": [
+                "Bitten höflich formulieren",
+                "Angemessene Anrede verwenden"
+              ]
+            },
+            {
+              "kompetenz": "Kulturspezifische Begriffe",
+              "beispiele": [
+                {
+                  "englisch": "6 pm",
+                  "deutsch": "18 Uhr"
+                },
+                {
+                  "englisch": "size 38",
+                  "deutsch": "Größe 38 (unterschiedliche Systeme!)"
+                },
+                {
+                  "deutsch": "Nikolaustag",
+                  "erklärung": "St. Nicholas Day - like Santa Claus in December"
+                },
+                {
+                  "englisch": "Guy Fawkes' Day",
+                  "erklärung": "Britischer Feiertag am 5. November mit Feuerwerk"
+                }
+              ]
+            }
+          ],
+          "strategien": [
+            "Bei Wortschatzlücken umschreiben",
+            "Einfache Sprache verwenden",
+            "Nachfragen bei Unklarheiten"
+          ],
+          "nicht_in_klasse5": [
+            "Gehörte Informationen sinngemäß übertragen (ohne Vorgabe)",
+            "Kulturspezifische Begriffe ohne Vorgabe beschreiben"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": 4,
+      "titel": "Verfügen über sprachliche Mittel",
+      "beschreibung": "Wortschatz, Grammatik und Aussprache für die Kommunikation",
+      "bereiche": [
+        {
+          "id": "4.1",
+          "titel": "Wortschatz (Lexik)",
+          "niveau": "A2/A2+",
+          "beschreibung": "Einfaches Repertoire an hochfrequenten Wörtern und Wendungen",
+          "kategorien": [
+            {
+              "kategorie": "Themenwortschatz",
+              "verweis": "Siehe Punkt 1: Soziokulturelles Orientierungswissen",
+              "schwerpunkte": [
+                "Familie",
+                "Schule",
+                "Hobbies",
+                "Essen",
+                "Wetter",
+                "Einkaufen",
+                "Wohnen"
+              ]
+            },
+            {
+              "kategorie": "Grammatische Wörter",
+              "unterkategorien": [
+                {
+                  "typ": "Zahlen",
+                  "bereiche": ["Kardinalzahlen (1-1000+)", "Ordinalzahlen (1st, 2nd, 3rd...)", "Telefonnummern", "Preise"]
+                },
+                {
+                  "typ": "Präpositionen",
+                  "beispiele": ["in", "on", "at", "under", "behind", "between", "next to"]
+                },
+                {
+                  "typ": "Zeit",
+                  "bereiche": ["Datum (1st May 2024)", "Uhrzeit (6 pm, half past three)", "Wochentage", "Monate", "Jahreszeiten"]
+                },
+                {
+                  "typ": "Pronomen",
+                  "arten": [
+                    {
+                      "art": "Personalpronomen",
+                      "beispiele": ["I, you, he, she, it, we, they"]
+                    },
+                    {
+                      "art": "Possessivbegleiter",
+                      "beispiele": ["my, your, his, her, its, our, their"]
+                    },
+                    {
+                      "art": "Demonstrativpronomen",
+                      "beispiele": ["this, these, that, those"]
+                    }
+                  ]
+                },
+                {
+                  "typ": "Modalverben",
+                  "verben": [
+                    {
+                      "verb": "can",
+                      "bedeutung": "können, dürfen"
+                    },
+                    {
+                      "verb": "may",
+                      "bedeutung": "dürfen, können"
+                    },
+                    {
+                      "verb": "must",
+                      "bedeutung": "müssen"
+                    },
+                    {
+                      "verb": "to have to",
+                      "bedeutung": "müssen"
+                    }
+                  ],
+                  "hinweis": "Auch Verneinung!"
+                }
+              ]
+            },
+            {
+              "kategorie": "Redemittel für Kommunikation",
+              "funktionen": [
+                {
+                  "funktion": "Satzverbindungen",
+                  "redemittel": ["and", "or", "then", "before", "until", "after that", "but", "because"]
+                },
+                {
+                  "funktion": "Begrüßung und Vorstellung",
+                  "redemittel": [
+                    "Good morning",
+                    "My name is...",
+                    "Nice to meet you",
+                    "This is my friend...",
+                    "May I ask you something?",
+                    "Have you got...?",
+                    "It was nice to meet you"
+                  ]
+                },
+                {
+                  "funktion": "Bitten und Danken",
+                  "redemittel": [
+                    "May I...?",
+                    "Could you...?",
+                    "Thank you",
+                    "I agree/disagree",
+                    "No thanks",
+                    "I'm sorry",
+                    "Excuse me"
+                  ]
+                },
+                {
+                  "funktion": "Nachfragen und Erklären",
+                  "redemittel": [
+                    "Can you repeat that, please?",
+                    "What does ... mean?",
+                    "This is...",
+                    "I don't understand"
+                  ]
+                },
+                {
+                  "funktion": "Wünsche und Vorschläge",
+                  "redemittel": [
+                    "I would like to...",
+                    "Why don't we...?",
+                    "Sorry ... but",
+                    "That's a deal"
+                  ]
+                },
+                {
+                  "funktion": "Meinungen und Vorlieben",
+                  "redemittel": [
+                    "I really like...",
+                    "I don't like ... very much",
+                    "I am not crazy about...",
+                    "I think that...",
+                    "My favourite ... is..."
+                  ]
+                },
+                {
+                  "funktion": "Briefe und E-Mails",
+                  "redemittel": [
+                    "Dear...",
+                    "Say hello to...",
+                    "I'd like to invite you",
+                    "Yours...",
+                    "Love,",
+                    "Best wishes"
+                  ]
+                },
+                {
+                  "funktion": "Beschreiben",
+                  "redemittel": [
+                    "They are good friends",
+                    "I think she's excited/sad because...",
+                    "He/She looks...",
+                    "It's big/small/nice..."
+                  ]
+                },
+                {
+                  "funktion": "Textwiedergabe",
+                  "redemittel": [
+                    "It says in the text that...",
+                    "In the first part/paragraph there is...",
+                    "At the beginning",
+                    "At the end",
+                    "The story is about..."
+                  ]
+                },
+                {
+                  "funktion": "Bilder beschreiben",
+                  "redemittel": [
+                    "The first picture shows...",
+                    "In the second picture we can see...",
+                    "On the left/right",
+                    "In the background/foreground"
+                  ]
+                }
+              ]
+            }
+          ],
+          "strategien": [
+            {
+              "strategie": "Vokabeln lernen",
+              "methoden": [
+                "Vokabelheft führen",
+                "Karteikärtchen (Lernbox)",
+                "Word webs (Wortnetze)",
+                "Word fields (Wortfelder)",
+                "Word families (Wortfamilien)"
+              ]
+            },
+            {
+              "strategie": "Wortbildungsregeln",
+              "beispiele": [
+                {
+                  "regel": "Verneinung mit un-",
+                  "beispiele": ["unhappy", "unfriendly", "unsafe"]
+                },
+                {
+                  "regel": "Personen mit -er",
+                  "beispiele": ["teacher", "player", "singer"]
+                },
+                {
+                  "regel": "Aktivitäten mit -ing",
+                  "beispiele": ["reading", "swimming", "cooking"]
+                }
+              ]
+            },
+            {
+              "strategie": "Umschreibung bei Wortschatzlücken",
+              "techniken": [
+                "Negation (It's not big = small)",
+                "Vergleich (It's like a...)",
+                "Hauptsätze (It's a thing. You use it to...)"
+              ]
+            }
+          ]
+        },
+        
+        {
+          "id": "4.2",
+          "titel": "Grammatik",
+          "niveau": "A2/A2+",
+          "beschreibung": "Einfache und häufig verwendete grammatische Strukturen",
+          "strukturen": [
+            {
+              "kategorie": "Nomen und Artikel",
+              "themen": [
+                {
+                  "thema": "Singular and Plural",
+                  "regeln": ["Regelmäßig: -s (book - books)", "Unregelmäßig (child - children, man - men)"]
+                },
+                {
+                  "thema": "Countable/Uncountable",
+                  "erklärung": "Zählbare (apple, book) und nicht-zählbare Nomen (water, money)"
+                },
+                {
+                  "thema": "Articles",
+                  "arten": [
+                    "Definite article: the",
+                    "Indefinite article: a, an"
+                  ]
+                },
+                {
+                  "thema": "Genitive",
+                  "beispiele": ["Tom's book", "the students' classroom"]
+                }
+              ]
+            },
+            {
+              "kategorie": "Mengenangaben",
+              "quantifiers": [
+                {
+                  "wort": "much",
+                  "verwendung": "bei uncountable nouns",
+                  "beispiel": "much water"
+                },
+                {
+                  "wort": "many",
+                  "verwendung": "bei countable nouns",
+                  "beispiel": "many books"
+                },
+                {
+                  "wort": "a little",
+                  "verwendung": "ein wenig (uncountable)",
+                  "beispiel": "a little milk"
+                },
+                {
+                  "wort": "a few",
+                  "verwendung": "ein paar (countable)",
+                  "beispiel": "a few friends"
+                },
+                {
+                  "wort": "some",
+                  "verwendung": "einige (Aussagesätze)",
+                  "beispiel": "some apples"
+                },
+                {
+                  "wort": "any",
+                  "verwendung": "Fragen und Verneinung",
+                  "beispiel": "any questions?"
+                }
+              ]
+            },
+            {
+              "kategorie": "Satzstrukturen",
+              "themen": [
+                {
+                  "thema": "Wortstellung (SPO)",
+                  "beschreibung": "Subjekt - Prädikat - Objekt",
+                  "beispiel": "I (S) play (P) football (O)"
+                },
+                {
+                  "thema": "Fragen",
+                  "arten": [
+                    "Yes/No-Fragen (Do you...? Can she...?)",
+                    "W-Fragen (What, Where, When, Why, Who, How)"
+                  ]
+                },
+                {
+                  "thema": "Short answers",
+                  "beispiele": ["Yes, I do.", "No, she can't.", "Yes, he is."]
+                },
+                {
+                  "thema": "Negation",
+                  "beispiele": ["I don't like...", "She isn't...", "We can't..."]
+                },
+                {
+                  "thema": "Commands (Befehle)",
+                  "beispiele": ["Open your book!", "Don't run!", "Be quiet!"]
+                },
+                {
+                  "thema": "Relativsätze",
+                  "typen": [
+                    {
+                      "typ": "Defining relative clauses",
+                      "beispiel": "The book that I read was great."
+                    },
+                    {
+                      "typ": "Non-defining relative clauses",
+                      "beispiel": "My sister, who is 15, lives in London."
+                    },
+                    {
+                      "typ": "Contact clauses",
+                      "beispiel": "The film (that) we saw was funny."
+                    }
+                  ],
+                  "relativpronomen": ["who (Personen)", "which (Dinge)", "that (beides)", "whose (Besitz)"]
+                }
+              ]
+            },
+            {
+              "kategorie": "Zeiten (Tenses)",
+              "zeiten": [
+                {
+                  "zeit": "Simple Present",
+                  "verwendung": ["Gewohnheiten", "Fakten", "Timetables"],
+                  "bildung": "Grundform (3. Person: -s)",
+                  "beispiele": ["I play football.", "She likes ice cream."]
+                },
+                {
+                  "zeit": "Present Progressive",
+                  "verwendung": ["Handlungen jetzt", "Temporäre Situationen"],
+                  "bildung": "am/is/are + -ing",
+                  "beispiele": ["I am reading.", "They are playing."]
+                },
+                {
+                  "zeit": "Simple Past",
+                  "verwendung": ["Abgeschlossene Handlungen in der Vergangenheit"],
+                  "bildung": "Regelmäßig: -ed, Unregelmäßig: 2. Form",
+                  "beispiele": ["I played football.", "She went to school."]
+                },
+                {
+                  "zeit": "Present Perfect Simple",
+                  "verwendung": ["Handlungen mit Bezug zur Gegenwart"],
+                  "bildung": "have/has + past participle",
+                  "beispiele": ["I have finished.", "She has lived here for 5 years."],
+                  "hinweis": "Ohne Kontrastierung zum Simple Past in Klasse 5"
+                },
+                {
+                  "zeit": "Going to-Future",
+                  "verwendung": ["Pläne", "Absichten"],
+                  "bildung": "am/is/are going to + Grundform",
+                  "beispiele": ["I am going to visit London."]
+                },
+                {
+                  "zeit": "Will-Future",
+                  "verwendung": ["Vorhersagen", "Spontane Entscheidungen"],
+                  "bildung": "will + Grundform",
+                  "beispiele": ["It will rain tomorrow."],
+                  "hinweis": "Ohne Kontrastierung in Klasse 5"
+                }
+              ]
+            },
+            {
+              "kategorie": "Adverbien",
+              "typen": [
+                {
+                  "typ": "Adverbs of place",
+                  "beispiele": ["here", "there", "everywhere", "outside"]
+                },
+                {
+                  "typ": "Adverbs of time",
+                  "beispiele": ["now", "today", "yesterday", "tomorrow", "always", "never"]
+                },
+                {
+                  "typ": "Adverbs of frequency",
+                  "beispiele": ["always", "usually", "often", "sometimes", "never"]
+                },
+                {
+                  "typ": "Adverbs of manner",
+                  "beispiele": ["quickly", "slowly", "carefully"],
+                  "hinweis": "Nur rezeptiv (nur verstehen)"
+                }
+              ]
+            },
+            {
+              "kategorie": "Vergleiche",
+              "thema": "Comparison of Adjectives",
+              "formen": [
+                {
+                  "form": "Komparativ (-er)",
+                  "beispiele": ["bigger", "nicer", "more beautiful"]
+                },
+                {
+                  "form": "Superlativ (-est)",
+                  "beispiele": ["biggest", "nicest", "most beautiful"]
+                },
+                {
+                  "form": "Gleichheit (as...as)",
+                  "beispiel": "She is as tall as her brother."
+                }
+              ],
+              "regeln": [
+                "Kurze Adjektive: -er/-est (big - bigger - biggest)",
+                "Lange Adjektive: more/most (beautiful - more beautiful - most beautiful)",
+                "Unregelmäßig: good - better - best"
+              ]
+            }
+          ],
+          "hilfsmittel": [
+            "Grammatikanhang im Lehrwerk",
+            "Übungsbuch",
+            "Grammatiktabellen"
+          ],
+          "nicht_in_klasse5": [
+            "Prop word 'one'",
+            "Reported speech (indirekte Rede)",
+            "Digitale Hilfsmittel"
+          ]
+        },
+        
+        {
+          "id": "4.3",
+          "titel": "Aussprache und Intonation",
+          "niveau": "A2/A2+",
+          "beschreibung": "Angemessene Aussprache, sodass man trotz Akzent verstanden wird",
+          "kompetenzen": [
+            {
+              "kompetenz": "Laute artikulieren",
+              "schwerpunkte": [
+                "Englische Laute korrekt bilden",
+                "Unterschiede zu deutschen Lauten erkennen",
+                "Bekannte Wörter weitgehend korrekt aussprechen"
+              ],
+              "beispiele_schwierige_laute": [
+                "th (think, this)",
+                "w (water, nicht wie deutsches w)",
+                "r (nicht gerollt)",
+                "a (verschiedene Aussprachen: cat, car, cake)"
+              ]
+            },
+            {
+              "kompetenz": "Wortbetonung",
+              "beschreibung": "Betonung bekannter Wörter korrekt verwenden",
+              "beispiele": [
+                "TEAcher (nicht teaCHER)",
+                "imPORtant",
+                "FAMily"
+              ]
+            },
+            {
+              "kompetenz": "Satzintonation",
+              "muster": [
+                {
+                  "satzart": "Aussagesatz",
+                  "intonation": "fallend",
+                  "beispiel": "I like pizza. ↓"
+                },
+                {
+                  "satzart": "Ja/Nein-Frage",
+                  "intonation": "steigend",
+                  "beispiel": "Do you like pizza? ↑"
+                },
+                {
+                  "satzart": "W-Frage",
+                  "intonation": "fallend",
+                  "beispiel": "What's your name? ↓"
+                },
+                {
+                  "satzart": "Aufforderung",
+                  "intonation": "fallend",
+                  "beispiel": "Open your book! ↓"
+                }
+              ]
+            }
+          ],
+          "hilfsmittel": [
+            "Digitale Medien (Audio, Video)",
+            "Lautschrift im Wörterbuch (angeleitet)",
+            "Online-Aussprachetools"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": 5,
+      "titel": "Text- und Medienkompetenz",
+      "beschreibung": "Texte erschließen, verstehen und produzieren",
+      "niveau": "A2/A2+",
+      "kompetenzbereiche": [
+        {
+          "bereich": "Rezeption (Texte verstehen)",
+          "kompetenzen": [
+            {
+              "kompetenz": "Notizen verfassen",
+              "zweck": ["Zu Gelesenem", "Zu Gehörtem", "Zur Vorbereitung eigener Texte"],
+              "form": "Angeleitet, mit Schlüsselwörtern"
+            },
+            {
+              "kompetenz": "Wiedergabe",
+              "beschreibung": "Gelesenes, Gehörtes und/oder Gesehenes mithilfe von Schlüsselwörtern wiedergeben"
+            },
+            {
+              "kompetenz": "Reagieren auf Texte",
+              "aktivitäten": [
+                "Persönliche Reaktionen beschreiben",
+                "Meinung äußern und kurz begründen",
+                "Vorlieben nennen"
+              ]
+            },
+            {
+              "kompetenz": "Diskontinuierliche Texte",
+              "textsorten": [
+                "Stundenplan",
+                "Bild",
+                "Bildergeschichte",
+                "Einfache Grafiken"
+              ],
+              "aktivität": "Versprachlichen mit Schlüsselwörtern"
+            },
+            {
+              "kompetenz": "Multimodalität",
+              "beschreibung": "Gehörte und gesehene Informationen im Zusammenhang verstehen",
+              "beispiele": [
+                "Musik zur Untermalung der Handlung",
+                "Mimik und Gestik",
+                "Bilder zu Text"
+              ]
+            }
+          ]
+        },
+        {
+          "bereich": "Produktion (Texte erstellen)",
+          "kompetenzen": [
+            {
+              "kompetenz": "Textsorten erkennen und anwenden",
+              "textsorten": [
+                {
+                  "typ": "Brief",
+                  "merkmale": ["Anrede", "Hauptteil", "Grußformel", "Unterschrift"]
+                },
+                {
+                  "typ": "E-Mail",
+                  "merkmale": ["Betreff", "Anrede", "Text", "Grußformel"]
+                },
+                {
+                  "typ": "Dialogszene",
+                  "merkmale": ["Sprecherangaben", "Dialoge", "Regieanweisungen"]
+                },
+                {
+                  "typ": "Plakat",
+                  "merkmale": ["Überschrift", "Bilder", "Kurze Texte"]
+                }
+              ]
+            },
+            {
+              "kompetenz": "Textgestaltung",
+              "aktivitäten": [
+                "Sprechblase ergänzen (Comic)",
+                "Szenische Darstellung",
+                "Texte umgestalten"
+              ]
+            }
+          ]
+        },
+        {
+          "bereich": "Mediennutzung",
+          "kompetenzen": [
+            {
+              "kompetenz": "Informationen entnehmen",
+              "beschreibung": "Vorgegebenen Quellen mithilfe gezielter Aufgaben Informationen entnehmen",
+              "quellen": [
+                "Schulbuch",
+                "Arbeitsblätter",
+                "Einfache Websites",
+                "Videos"
+              ]
+            }
+          ]
+        }
+      ],
+      "nicht_in_klasse5": [
+        "Gedicht als Textsorte",
+        "Textvortrag",
+        "Digitale Hilfsmittel selbstständig nutzen"
+      ]
+    },
+    
+    {
+      "id": 6,
+      "titel": "Prozessbezogene Kompetenzen",
+      "beschreibung": "Diese Kompetenzen ziehen sich durch alle Bereiche",
+      "kompetenzen": [
+        {
+          "kompetenz": "Sprachlernkompetenz",
+          "teilkompetenzen": [
+            "Den eigenen Sprachlernprozess zunehmend bewusst steuern",
+            "Methoden und Strategien zur Planung anwenden",
+            "Lernprozesse durchführen",
+            "Lernprozesse reflektieren",
+            "Lernziele setzen"
+          ],
+          "beispiele": [
+            "Vokabeln regelmäßig wiederholen",
+            "Fehler als Lernchance sehen",
+            "Lernstrategien ausprobieren",
+            "Fortschritte dokumentieren"
+          ]
+        },
+        {
+          "kompetenz": "Sprachbewusstheit",
+          "teilkompetenzen": [
+            "Über Sprache nachdenken",
+            "Sprachliche Strukturen erkennen",
+            "Muster erkennen",
+            "Eigene und fremde Sprache vergleichen",
+            "Gemeinsamkeiten und Unterschiede erkennen"
+          ],
+          "beispiele": [
+            "Ähnlichkeiten Englisch-Deutsch erkennen (Cognates)",
+            "Unterschiede in Satzstellung bemerken",
+            "Kulturelle Unterschiede wahrnehmen"
+          ]
+        }
+      ]
+    }
+  ],
+  
+  "hinweise_fuer_lernapp": {
+    "zielgruppe": {
+      "alter": "10-11 Jahre",
+      "klassenstufe": "5",
+      "schulart": "Gymnasium"
+    },
+    "didaktische_prinzipien": [
+      {
+        "prinzip": "Altersgerecht",
+        "beschreibung": "Themen aus der Lebenswelt der Schüler (Familie, Schule, Hobbies)"
+      },
+      {
+        "prinzip": "Kommunikation vor Grammatik",
+        "beschreibung": "Sprechen und Verstehen sind wichtiger als perfekte Grammatik"
+      },
+      {
+        "prinzip": "Fehlertoleranz",
+        "beschreibung": "Verständlichkeit ist wichtiger als Perfektion"
+      },
+      {
+        "prinzip": "Visuelle Unterstützung",
+        "beschreibung": "Bilder, Videos, Gestik helfen beim Verstehen"
+      },
+      {
+        "prinzip": "Kulturvergleich",
+        "beschreibung": "Deutsche und englische/amerikanische Kultur vergleichen"
+      },
+      {
+        "prinzip": "Handlungsorientierung",
+        "beschreibung": "Sprache in Situationen anwenden (Rollenspiele, Dialoge)"
+      },
+      {
+        "prinzip": "Spiralcurriculum",
+        "beschreibung": "Themen werden wiederholt und vertieft"
+      }
+    ],
+    "schwierigkeitsgrad": {
+      "niveau": "A2/A2+",
+      "ger_beschreibung": "Elementare Sprachverwendung",
+      "kann_aussagen": [
+        "Kann Sätze und häufig gebrauchte Ausdrücke verstehen",
+        "Kann sich in einfachen Situationen verständigen",
+        "Kann die eigene Herkunft und Umgebung beschreiben",
+        "Kann einfache Texte über vertraute Themen verstehen",
+        "Kann kurze, einfache Texte schreiben"
+      ]
+    },
+    "textmerkmale_klasse5": {
+      "länge": "Kurz (bis ca. 150 Wörter)",
+      "komplexität": "Einfach strukturiert",
+      "wortschatz": "Hochfrequent und bekannt",
+      "unterstützung": "Visuelle Hilfen, klare Struktur",
+      "authentizität": "Häufig didaktisiert, einfache authentische Texte"
+    },
+    "übergang_klasse5_zu_6": {
+      "beschreibung": "Die Lesehilfe 2025 zeigt, dass aufgrund der G9-Reform einige Inhalte nicht mehr zwingend in Klasse 5/6 behandelt werden müssen.",
+      "auswirkung": "Mehr Zeit für grundlegende Kompetenzen, weniger Stoffdruck",
+      "fokus": "Sichere Beherrschung der Basics"
+    },
+    "ki_integration_tipps": [
+      {
+        "bereich": "Spracherkennung",
+        "tipp": "Aussprachefeedback mit Fehlertoleranz für Anfänger"
+      },
+      {
+        "bereich": "Dialogsysteme",
+        "tipp": "Einfache Chatbots für Alltagssituationen (Einkaufen, Kennenlernen)"
+      },
+      {
+        "bereich": "Textgenerierung",
+        "tipp": "Hilfe beim Schreiben mit Vorschlägen und Korrekturen"
+      },
+      {
+        "bereich": "Adaptive Lernpfade",
+        "tipp": "Schwierigkeit an Lernfortschritt anpassen"
+      },
+      {
+        "bereich": "Gamification",
+        "tipp": "Punkte, Levels, Badges für Motivation"
+      }
+    ],
+    "empfohlene_funktionen": [
+      "Vokabeltrainer mit Spaced Repetition",
+      "Interaktive Dialoge mit Spracherkennung",
+      "Grammatikübungen mit sofortigem Feedback",
+      "Hörverständnisaufgaben mit Videos",
+      "Schreibaufgaben mit KI-Korrektur",
+      "Kulturelle Informationen zu GB/USA",
+      "Fortschrittstracking und Lernstatistiken",
+      "Spiele und Quiz zu allen Themenbereichen"
+    ]
+  },
+  
+  "quellen": [
+    {
+      "titel": "Bildungsplan Gymnasium - Englisch als erste Fremdsprache",
+      "herausgeber": "Ministerium für Kultus, Jugend und Sport Baden-Württemberg",
+      "datum": "23. März 2016 in der Fassung vom 10. März 2025 (V2)",
+      "url": "https://www.bildungsplaene-bw.de/"
+    },
+    {
+      "titel": "Lesehilfe für den Bildungsplan des Gymnasiums Englisch",
+      "herausgeber": "Ministerium für Kultus, Jugend und Sport Baden-Württemberg",
+      "datum": "Juli 2025",
+      "beschreibung": "Hinweise für Klasse 5 und 6 im Schuljahr 2025/2026"
+    },
+    {
+      "titel": "Synopsen der inhaltsbezogenen Kompetenzen - Englisch",
+      "herausgeber": "Landesinstitut für Schulentwicklung Baden-Württemberg",
+      "datum": "September 2016"
+    }
+  ],
+  
+  "metadata": {
+    "version": "1.0",
+    "erstellt_am": "2025-10-15",
+    "format": "JSON",
+    "kodierung": "UTF-8",
+    "verwendungszweck": "KI-gestützte Lernapp für Englisch Klasse 5",
+    "lizenz": "Bildungsplan Baden-Württemberg ist öffentlich zugänglich"
+  }
+}
