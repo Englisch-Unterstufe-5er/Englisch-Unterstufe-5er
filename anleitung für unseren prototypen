@@ -1,0 +1,88 @@
+# 🎓 Englisch Lernapp - Anleitung
+
+## Was kann die App?
+
+Deine Lernapp hat **5 verschiedene Übungstypen**:
+
+1. **🎮 Vokabel Memory** - Finde die passenden Paare von englischen und deutschen Wörtern
+1. **✅❌ Richtig oder Falsch** - Entscheide, ob die Aussage stimmt
+1. **🔄 Vokabeln übersetzen** - Übersetze Wörter von Deutsch nach Englisch und umgekehrt
+1. **📖 Leseverstehen** - Lies einen Text und beantworte Fragen dazu
+1. **📝 Grammatik üben** - Übe wichtige Grammatikregeln für die 4./5. Klasse
+
+## ⭐ Sterne-System
+
+- Für jede abgeschlossene Übung mit mindestens 7 von 10 richtigen Antworten bekommst du **1 Stern**!
+- Deine Sterne werden gespeichert, auch wenn du die App schließt
+- Sammle so viele Sterne wie möglich!
+
+## 🚀 So benutzt du die App:
+
+1. **Öffne die Datei `lernapp.html`** in Safari auf deinem iPad
+1. Wähle eine Übung aus
+1. Beantworte die Fragen
+1. Sammle Sterne!
+
+## 📱 Für GitHub / Replit:
+
+### Variante 1: Auf dem iPad testen (einfach)
+
+- Öffne einfach die HTML-Datei in Safari
+- Die App läuft direkt im Browser
+
+### Variante 2: Auf GitHub hochladen
+
+1. Gehe zu deinem GitHub Repository im Browser
+1. Klicke auf “Add file” → “Upload files”
+1. Lade die `lernapp.html` Datei hoch
+1. Klicke auf “Commit changes”
+1. Gehe zu Settings → Pages → wähle “main branch” als Source
+1. Nach ein paar Minuten ist deine App online!
+
+### Variante 3: Mit Replit
+
+1. Gehe zu replit.com
+1. Erstelle ein neues “HTML, CSS, JS” Projekt
+1. Lösche den Inhalt von `index.html`
+1. Kopiere den kompletten Code aus `lernapp.html` hinein
+1. Klicke auf “Run” - fertig!
+
+## 🎨 Was kannst du noch hinzufügen?
+
+Hier sind ein paar Ideen für Verbesserungen:
+
+1. **Mehr Vokabeln hinzufügen** (im Code-Bereich “vocabulary”)
+1. **Mehr Lesetexte** (im Bereich “readingTexts”)
+1. **Ein Spiel-Belohnungssystem** (mit den Sternen Mini-Spiele freischalten)
+1. **Verschiedene Schwierigkeitsstufen**
+1. **Ton-Effekte** für richtige/falsche Antworten
+1. **Animationen** beim Gewinnen von Sternen
+1. **Fortschritts-Anzeige** (wie viele Vokabeln gelernt)
+1. **Eigene Vokabellisten** hinzufügen können
+
+## 🤖 KI-Anbindung später hinzufügen
+
+Wenn du später noch eine KI einbauen möchtest, kannst du z.B.:
+
+- ChatGPT API oder Claude API verwenden
+- Die KI kann neue Fragen generieren
+- Die KI kann die Texte für Leseverstehen erstellen
+- Die KI kann personalisierte Tipps geben
+
+Für die KI-Anbindung brauchst du dann aber einen API-Key und musst etwas JavaScript-Code hinzufügen.
+
+## 📝 Notizen
+
+- Die App funktioniert komplett offline (nach dem ersten Laden)
+- Alle Daten werden nur auf deinem Gerät gespeichert
+- Der Code ist extra mit vielen Kommentaren versehen, damit du verstehst, was passiert
+
+## 💡 Tipps zum Weiterentwickeln
+
+1. Öffne die Datei in einem Code-Editor
+1. Suche nach den Kommentaren (// oder /* */)
+1. Experimentiere mit den Farben (im `<style>` Bereich)
+1. Füge neue Vokabeln hinzu (im `vocabulary` Array)
+1. Teste immer nach jeder Änderung!
+
+Viel Erfolg mit deiner Lernapp! 🚀
