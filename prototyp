@@ -335,6 +335,35 @@
         { english: "door", german: "Tür" },
         { english: "apple", german: "Apfel" },
         { english: "water", german: "Wasser" }
+        { english: "yellow", german: "gelb" }
+        { english: "green", german: "grün" }
+        { english: "pink", german: "pink" }
+        { english: "blue", german: "blau" }
+        { english: "brown", german: "braun" }
+        { english: "black", german: "schwarz" }
+        { english: "red", german: "rot" }
+        { english: "white", german: "weiß" }
+        { english: "purple", german: "lila" }
+        { english: "orange", german: "orange" }
+        { english: "bird", german: "vogel" }
+        { english: "fish", german: "fisch" }
+        { english: "animal", german: "tier" }
+        { english: "mouse", german: "maus" }
+        { english: "horse", german: "pferd" }
+        { english: "cow", german: "kuh" }
+        { english: "sheep", german: "Schaf" }
+        { english: "frog", german: "Frosch" }
+        { english: "wolf", german: "Wolf" }
+        { english: "body parts", german: "Körperteile" }
+        { english: "head", german: "Kopf" }
+        { english: "shoulder", german: "Schulter" }
+        { english: "knee", german: "Knie" }
+        { english: "toe", german: "Zeh" }
+        { english: "finger", german: "Finger" }
+        { english: "hand", german: "Hand" }
+        { english: "nose", german: "Nase" }
+        { english: "elbow", german: "Ellenbogen" }
+        { english: "belly", german: "Bauch" }
     ];
 
     // Grammatik-Fragen (4. Klasse Niveau)
