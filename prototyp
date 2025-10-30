@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Englisch Lernapp - 5. Klasse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        color: #667eea;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .stars-display {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #ffd700;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .menu-button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 30px 20px;
+        border-radius: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        font-weight: bold;
+    }
+
+    .menu-button:hover {
+        transform: scale(1.05);
+    }
+
+    .screen {
+        display: none;
+    }
+
+    .screen.active {
+        display: block;
+    }
+
+    .back-button {
+        background: #e74c3c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .question-container {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .question {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .options {
+        display: grid;
+        gap: 10px;
+    }
+
+    .option-button {
+        background: white;
+        border: 2px solid #667eea;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: all 0.2s;
+    }
+
+    .option-button:hover {
+        background: #667eea;
+        color: white;
+    }
+
+    .option-button.correct {
+        background: #2ecc71;
+        border-color: #2ecc71;
+        color: white;
+    }
+
+    .option-button.wrong {
+        background: #e74c3c;
+        border-color: #e74c3c;
+        color: white;
+    }
+
+    .input-answer {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        border: 2px solid #667eea;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+
+    .submit-button {
+        background: #2ecc71;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .progress {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #667eea;
+        font-weight: bold;
+    }
+
+    .memory-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    .memory-card {
+        background: #667eea;
+        color: white;
+        padding: 30px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+
+    .memory-card.flipped {
+        background: white;
+        color: #333;
+        border: 2px solid #667eea;
+    }
+
+    .memory-card.matched {
+        background: #2ecc71;
+        color: white;
+        pointer-events: none;
+    }
+
+    .result-message {
+        text-align: center;
+        font-size: 24px;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .result-message.success {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .result-message.error {
+        background: #f8d7da;
+        color: #721c24;
+    }
+
+    .reading-text {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        line-height: 1.8;
+        font-size: 18px;
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <!-- Hauptmenü -->
+        <div id="main-menu" class="screen active">
+            <h1>🎓 Englisch Lernapp</h1>
+            <div class="stars-display">
+                ⭐ Deine Sterne: <span id="star-count">0</span>
+            </div>
+            <div class="menu">
+                <button class="menu-button" onclick="startGame('memory')">
+                    🎮 Vokabel Memory
+                </button>
+                <button class="menu-button" onclick="startGame('truefalse')">
+                    ✅❌ Richtig oder Falsch
+                </button>
+                <button class="menu-button" onclick="startGame('translate')">
+                    🔄 Vokabeln übersetzen
+                </button>
+                <button class="menu-button" onclick="startGame('reading')">
+                    📖 Leseverstehen
+                </button>
+                <button class="menu-button" onclick="startGame('grammar')">
+                    📝 Grammatik üben
+                </button>
+            </div>
+        </div>
+
+```
+    <!-- Memory Spiel -->
+    <div id="memory-screen" class="screen">
+        <button class="back-button" onclick="backToMenu()">← Zurück</button>
+        <h2 style="text-align: center; color: #667eea;">Vokabel Memory</h2>
+        <div class="progress">Gefundene Paare: <span id="memory-pairs">0</span>/6</div>
+        <div class="memory-grid" id="memory-grid"></div>
+        <div id="memory-result"></div>
+    </div>
+
+    <!-- Richtig oder Falsch -->
+    <div id="truefalse-screen" class="screen">
+        <button class="back-button" onclick="backToMenu()">← Zurück</button>
+        <h2 style="text-align: center; color: #667eea;">Richtig oder Falsch?</h2>
+        <div class="progress">Frage <span id="tf-current">1</span> von 10</div>
+        <div class="question-container">
+            <div class="question" id="tf-question"></div>
+            <div class="options">
+                <button class="option-button" onclick="checkTrueFalse(true)">✅ Richtig</button>
+                <button class="option-button" onclick="checkTrueFalse(false)">❌ Falsch</button>
+            </div>
+        </div>
+        <div id="tf-result"></div>
+    </div>
+
+    <!-- Vokabeln übersetzen -->
+    <div id="translate-screen" class="screen">
+        <button class="back-button" onclick="backToMenu()">← Zurück</button>
+        <h2 style="text-align: center; color: #667eea;">Vokabeln übersetzen</h2>
+        <div class="progress">Frage <span id="trans-current">1</span> von 10</div>
+        <div class="question-container">
+            <div class="question" id="trans-question"></div>
+            <input type="text" class="input-answer" id="trans-input" placeholder="Deine Antwort...">
+            <button class="submit-button" onclick="checkTranslation()">Überprüfen</button>
+        </div>
+        <div id="trans-result"></div>
+    </div>
+
+    <!-- Leseverstehen -->
+    <div id="reading-screen" class="screen">
+        <button class="back-button" onclick="backToMenu()">← Zurück</button>
+        <h2 style="text-align: center; color: #667eea;">Leseverstehen</h2>
+        <div class="progress">Frage <span id="read-current">1</span> von 10</div>
+        <div class="reading-text" id="reading-text"></div>
+        <div class="question-container">
+            <div class="question" id="read-question"></div>
+            <div class="options" id="read-options"></div>
+        </div>
+        <div id="read-result"></div>
+    </div>
+
+    <!-- Grammatik -->
+    <div id="grammar-screen" class="screen">
+        <button class="back-button" onclick="backToMenu()">← Zurück</button>
+        <h2 style="text-align: center; color: #667eea;">Grammatik üben</h2>
+        <div class="progress">Frage <span id="gram-current">1</span> von 10</div>
+        <div class="question-container">
+            <div class="question" id="gram-question"></div>
+            <div class="options" id="gram-options"></div>
+        </div>
+        <div id="gram-result"></div>
+    </div>
+</div>
+
+<script>
+    // ===== DATEN =====
+    let stars = 0;
+
+    // Vokabeln für 5. Klasse
+    const vocabulary = [
+        { english: "school", german: "Schule" },
+        { english: "teacher", german: "Lehrer" },
+        { english: "book", german: "Buch" },
+        { english: "pen", german: "Stift" },
+        { english: "friend", german: "Freund" },
+        { english: "house", german: "Haus" },
+        { english: "family", german: "Familie" },
+        { english: "cat", german: "Katze" },
+        { english: "dog", german: "Hund" },
+        { english: "table", german: "Tisch" },
+        { english: "chair", german: "Stuhl" },
+        { english: "window", german: "Fenster" },
+        { english: "door", german: "Tür" },
+        { english: "apple", german: "Apfel" },
+        { english: "water", german: "Wasser" }
+    ];
+
+    // Grammatik-Fragen (4. Klasse Niveau)
+    const grammarQuestions = [
+        {
+            question: "Wähle die richtige Form: I ___ happy.",
+            options: ["am", "is", "are", "be"],
+            correct: 0
+        },
+        {
+            question: "Wähle die richtige Form: She ___ a book.",
+            options: ["have", "has", "having", "had"],
+            correct: 1
+        },
+        {
+            question: "Wähle die richtige Form: They ___ to school.",
+            options: ["go", "goes", "going", "went"],
+            correct: 0
+        },
+        {
+            question: "Wähle die richtige Mehrzahl: one cat, two ___",
+            options: ["cat", "cats", "cates", "caties"],
+            correct: 1
+        },
+        {
+            question: "Was bedeutet 'He is running'?",
+            options: ["Er rennt", "Er rannte", "Er wird rennen", "Er ist"],
+            correct: 0
+        },
+        {
+            question: "Wähle die richtige Form: We ___ students.",
+            options: ["am", "is", "are", "be"],
+            correct: 2
+        },
+        {
+            question: "Wie heißt die Vergangenheit von 'play'?",
+            options: ["playd", "played", "playing", "plays"],
+            correct: 1
+        },
+        {
+            question: "Wähle das richtige Wort: This is ___ book.",
+            options: ["a", "an", "the", "some"],
+            correct: 0
+        },
+        {
+            question: "Wähle die richtige Form: She ___ every day.",
+            options: ["read", "reads", "reading", "readed"],
+            correct: 1
+        },
+        {
+            question: "Welches Wort ist ein Adjektiv?",
+            options: ["run", "happy", "quickly", "school"],
+            correct: 1
+        }
+    ];
+
+    // Richtig/Falsch Fragen
+    const trueFalseQuestions = [
+        { question: "'Dog' bedeutet 'Hund'", answer: true },
+        { question: "'Book' bedeutet 'Stuhl'", answer: false },
+        { question: "'I am' bedeutet 'Ich bin'", answer: true },
+        { question: "'Teacher' bedeutet 'Schüler'", answer: false },
+        { question: "'Happy' bedeutet 'glücklich'", answer: true },
+        { question: "'Cat' bedeutet 'Vogel'", answer: false },
+        { question: "'School' bedeutet 'Schule'", answer: true },
+        { question: "'Water' bedeutet 'Feuer'", answer: false },
+        { question: "'Friend' bedeutet 'Freund'", answer: true },
+        { question: "'Table' bedeutet 'Fenster'", answer: false }
+    ];
+
+    // Lesetexte
+    const readingTexts = [
+        {
+            text: "Hello! My name is Tom. I am 10 years old. I live in a small house with my family. I have a dog. His name is Max. Max is very friendly. I go to school every day. My favorite subject is English. I like to read books.",
+            questions: [
+                {
+                    question: "Wie alt ist Tom?",
+                    options: ["9 Jahre", "10 Jahre", "11 Jahre", "8 Jahre"],
+                    correct: 1
+                },
+                {
+                    question: "Wie heißt Toms Hund?",
+                    options: ["Tom", "Rex", "Max", "Buddy"],
+                    correct: 2
+                },
+                {
+                    question: "Was ist Toms Lieblingsfach?",
+                    options: ["Mathe", "Sport", "Englisch", "Kunst"],
+                    correct: 2
+                }
+            ]
+        }
+    ];
+
+    // ===== SPIEL-VARIABLEN =====
+    let currentGame = null;
+    let currentQuestion = 0;
+    let correctAnswers = 0;
+    let memoryCards = [];
+    let flippedCards = [];
+    let matchedPairs = 0;
+
+    // ===== ALLGEMEINE FUNKTIONEN =====
+    function updateStars() {
+        document.getElementById('star-count').textContent = stars;
+        // Speichern im Browser
+        localStorage.setItem('stars', stars);
+    }
+
+    function loadStars() {
+        const savedStars = localStorage.getItem('stars');
+        if (savedStars) {
+            stars = parseInt(savedStars);
+            updateStars();
+        }
+    }
+
+    function showScreen(screenId) {
+        document.querySelectorAll('.screen').forEach(screen => {
+            screen.classList.remove('active');
+        });
+        document.getElementById(screenId).classList.add('active');
+    }
+
+    function backToMenu() {
+        showScreen('main-menu');
+        resetGame();
+    }
+
+    function resetGame() {
+        currentQuestion = 0;
+        correctAnswers = 0;
+        matchedPairs = 0;
+        flippedCards = [];
+    }
+
+    function awardStar() {
+        stars++;
+        updateStars();
+        alert('🎉 Glückwunsch! Du hast einen Stern gewonnen! ⭐');
+    }
+
+    // ===== MEMORY SPIEL =====
+    function startMemory() {
+        showScreen('memory-screen');
+        matchedPairs = 0;
+        document.getElementById('memory-pairs').textContent = '0';
+        
+        // Wähle 6 zufällige Vokabeln
+        const selectedVocab = vocabulary.sort(() => Math.random() - 0.5).slice(0, 6);
+        
+        // Erstelle Karten-Array (jeweils englisch und deutsch)
+        memoryCards = [];
+        selectedVocab.forEach((vocab, index) => {
+            memoryCards.push({ id: index, text: vocab.english, pair: index });
+            memoryCards.push({ id: index + 100, text: vocab.german, pair: index });
+        });
+        
+        // Mische die Karten
+        memoryCards.sort(() => Math.random() - 0.5);
+        
+        // Erstelle HTML
+        const grid = document.getElementById('memory-grid');
+        grid.innerHTML = '';
+        memoryCards.forEach((card, index) => {
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'memory-card';
+            cardDiv.dataset.index = index;
+            cardDiv.dataset.pair = card.pair;
+            cardDiv.dataset.text = card.text;
+            cardDiv.textContent = '?';
+            cardDiv.onclick = () => flipCard(index);
+            grid.appendChild(cardDiv);
+        });
+    }
+
+    function flipCard(index) {
+        const cards = document.querySelectorAll('.memory-card');
+        const card = cards[index];
+        
+        // Ignoriere bereits umgedrehte oder gematchte Karten
+        if (card.classList.contains('flipped') || card.classList.contains('matched')) {
+            return;
+        }
+        
+        // Nicht mehr als 2 Karten gleichzeitig
+        if (flippedCards.length >= 2) {
+            return;
+        }
+        
+        // Drehe Karte um
+        card.classList.add('flipped');
+        card.textContent = card.dataset.text;
+        flippedCards.push({ index: index, pair: card.dataset.pair });
+        
+        // Prüfe ob 2 Karten umgedreht sind
+        if (flippedCards.length === 2) {
+            setTimeout(checkMemoryMatch, 1000);
+        }
+    }
+
+    function checkMemoryMatch() {
+        const cards = document.querySelectorAll('.memory-card');
+        const card1 = cards[flippedCards[0].index];
+        const card2 = cards[flippedCards[1].index];
+        
+        if (flippedCards[0].pair === flippedCards[1].pair) {
+            // Match!
+            card1.classList.add('matched');
+            card2.classList.add('matched');
+            matchedPairs++;
+            document.getElementById('memory-pairs').textContent = matchedPairs;
+            
+            if (matchedPairs === 6) {
+                document.getElementById('memory-result').innerHTML = 
+                    '<div class="result-message success">🎉 Super! Du hast alle Paare gefunden!</div>';
+                awardStar();
+            }
+        } else {
+            // Kein Match - drehe zurück
+            card1.classList.remove('flipped');
+            card2.classList.remove('flipped');
+            card1.textContent = '?';
+            card2.textContent = '?';
+        }
+        
+        flippedCards = [];
+    }
+
+    // ===== RICHTIG ODER FALSCH =====
+    function startTrueFalse() {
+        showScreen('truefalse-screen');
+        resetGame();
+        showTrueFalseQuestion();
+    }
+
+    function showTrueFalseQuestion() {
+        if (currentQuestion >= 10) {
+            finishTrueFalse();
+            return;
+        }
+        
+        const question = trueFalseQuestions[currentQuestion];
+        document.getElementById('tf-current').textContent = currentQuestion + 1;
+        document.getElementById('tf-question').textContent = question.question;
+        document.getElementById('tf-result').innerHTML = '';
+    }
+
+    function checkTrueFalse(answer) {
+        const question = trueFalseQuestions[currentQuestion];
+        const resultDiv = document.getElementById('tf-result');
+        
+        if (answer === question.answer) {
+            correctAnswers++;
+            resultDiv.innerHTML = '<div class="result-message success">✅ Richtig!</div>';
+        } else {
+            resultDiv.innerHTML = '<div class="result-message error">❌ Leider falsch!</div>';
+        }
+        
+        currentQuestion++;
+        setTimeout(showTrueFalseQuestion, 1500);
+    }
+
+    function finishTrueFalse() {
+        const resultDiv = document.getElementById('tf-result');
+        resultDiv.innerHTML = `
+            <div class="result-message ${correctAnswers >= 7 ? 'success' : 'error'}">
+                <h3>Fertig!</h3>
+                <p>Du hast ${correctAnswers} von 10 Fragen richtig beantwortet!</p>
+            </div>
+        `;
+        
+        if (correctAnswers >= 7) {
+            awardStar();
+        }
+    }
+
+    // ===== VOKABELN ÜBERSETZEN =====
+    function startTranslate() {
+        showScreen('translate-screen');
+        resetGame();
+        showTranslateQuestion();
+    }
+
+    function showTranslateQuestion() {
+        if (currentQuestion >= 10) {
+            finishTranslate();
+            return;
+        }
+        
+        const vocab = vocabulary[currentQuestion];
+        const direction = Math.random() > 0.5; // true = EN->DE, false = DE->EN
+        
+        document.getElementById('trans-current').textContent = currentQuestion + 1;
+        
+        if (direction) {
+            document.getElementById('trans-question').textContent = 
+                `Übersetze ins Deutsche: "${vocab.english}"`;
+            document.getElementById('trans-input').dataset.answer = vocab.german.toLowerCase();
+        } else {
+            document.getElementById('trans-question').textContent = 
+                `Übersetze ins Englische: "${vocab.german}"`;
+            document.getElementById('trans-input').dataset.answer = vocab.english.toLowerCase();
+        }
+        
+        document.getElementById('trans-input').value = '';
+        document.getElementById('trans-result').innerHTML = '';
+    }
+
+    function checkTranslation() {
+        const input = document.getElementById('trans-input');
+        const answer = input.value.toLowerCase().trim();
+        const correct = input.dataset.answer;
+        const resultDiv = document.getElementById('trans-result');
+        
+        if (answer === correct) {
+            correctAnswers++;
+            resultDiv.innerHTML = '<div class="result-message success">✅ Richtig!</div>';
+        } else {
+            resultDiv.innerHTML = `<div class="result-message error">❌ Falsch! Richtig wäre: "${correct}"</div>`;
+        }
+        
+        currentQuestion++;
+        setTimeout(showTranslateQuestion, 2000);
+    }
+
+    function finishTranslate() {
+        const resultDiv = document.getElementById('trans-result');
+        resultDiv.innerHTML = `
+            <div class="result-message ${correctAnswers >= 7 ? 'success' : 'error'}">
+                <h3>Fertig!</h3>
+                <p>Du hast ${correctAnswers} von 10 Vokabeln richtig übersetzt!</p>
+            </div>
+        `;
+        
+        if (correctAnswers >= 7) {
+            awardStar();
+        }
+    }
+
+    // ===== LESEVERSTEHEN =====
+    function startReading() {
+        showScreen('reading-screen');
+        resetGame();
+        
+        const reading = readingTexts[0];
+        document.getElementById('reading-text').textContent = reading.text;
+        showReadingQuestion();
+    }
+
+    function showReadingQuestion() {
+        if (currentQuestion >= readingTexts[0].questions.length) {
+            // Fülle auf 10 Fragen auf mit wiederkehrenden Fragen
+            currentQuestion = 0;
+        }
+        
+        if (correctAnswers >= 10) {
+            finishReading();
+            return;
+        }
+        
+        const question = readingTexts[0].questions[currentQuestion % readingTexts[0].questions.length];
+        document.getElementById('read-current').textContent = (currentQuestion % 10) + 1;
+        document.getElementById('read-question').textContent = question.question;
+        
+        const optionsDiv = document.getElementById('read-options');
+        optionsDiv.innerHTML = '';
+        
+        question.options.forEach((option, index) => {
+            const button = document.createElement('button');
+            button.className = 'option-button';
+            button.textContent = option;
+            button.onclick = () => checkReading(index, question.correct);
+            optionsDiv.appendChild(button);
+        });
+        
+        document.getElementById('read-result').innerHTML = '';
+    }
+
+    function checkReading(selected, correct) {
+        const resultDiv = document.getElementById('read-result');
+        const buttons = document.querySelectorAll('#read-options .option-button');
+        
+        buttons.forEach(button => button.disabled = true);
+        
+        if (selected === correct) {
+            correctAnswers++;
+            buttons[selected].classList.add('correct');
+            resultDiv.innerHTML = '<div class="result-message success">✅ Richtig!</div>';
+        } else {
+            buttons[selected].classList.add('wrong');
+            buttons[correct].classList.add('correct');
+            resultDiv.innerHTML = '<div class="result-message error">❌ Leider falsch!</div>';
+        }
+        
+        currentQuestion++;
+        setTimeout(showReadingQuestion, 2000);
+    }
+
+    function finishReading() {
+        const resultDiv = document.getElementById('read-result');
+        resultDiv.innerHTML = `
+            <div class="result-message ${correctAnswers >= 7 ? 'success' : 'error'}">
+                <h3>Fertig!</h3>
+                <p>Du hast ${correctAnswers} von 10 Fragen richtig beantwortet!</p>
+            </div>
+        `;
+        
+        if (correctAnswers >= 7) {
+            awardStar();
+        }
+    }
+
+    // ===== GRAMMATIK =====
+    function startGrammar() {
+        showScreen('grammar-screen');
+        resetGame();
+        showGrammarQuestion();
+    }
+
+    function showGrammarQuestion() {
+        if (currentQuestion >= 10) {
+            finishGrammar();
+            return;
+        }
+        
+        const question = grammarQuestions[currentQuestion];
+        document.getElementById('gram-current').textContent = currentQuestion + 1;
+        document.getElementById('gram-question').textContent = question.question;
+        
+        const optionsDiv = document.getElementById('gram-options');
+        optionsDiv.innerHTML = '';
+        
+        question.options.forEach((option, index) => {
+            const button = document.createElement('button');
+            button.className = 'option-button';
+            button.textContent = option;
+            button.onclick = () => checkGrammar(index, question.correct);
+            optionsDiv.appendChild(button);
+        });
+        
+        document.getElementById('gram-result').innerHTML = '';
+    }
+
+    function checkGrammar(selected, correct) {
+        const resultDiv = document.getElementById('gram-result');
+        const buttons = document.querySelectorAll('#gram-options .option-button');
+        
+        buttons.forEach(button => button.disabled = true);
+        
+        if (selected === correct) {
+            correctAnswers++;
+            buttons[selected].classList.add('correct');
+            resultDiv.innerHTML = '<div class="result-message success">✅ Richtig!</div>';
+        } else {
+            buttons[selected].classList.add('wrong');
+            buttons[correct].classList.add('correct');
+            resultDiv.innerHTML = '<div class="result-message error">❌ Leider falsch!</div>';
+        }
+        
+        currentQuestion++;
+        setTimeout(showGrammarQuestion, 2000);
+    }
+
+    function finishGrammar() {
+        const resultDiv = document.getElementById('gram-result');
+        resultDiv.innerHTML = `
+            <div class="result-message ${correctAnswers >= 7 ? 'success' : 'error'}">
+                <h3>Fertig!</h3>
+                <p>Du hast ${correctAnswers} von 10 Fragen richtig beantwortet!</p>
+            </div>
+        `;
+        
+        if (correctAnswers >= 7) {
+            awardStar();
+        }
+    }
+
+    // ===== SPIEL STARTEN =====
+    function startGame(type) {
+        currentGame = type;
+        switch(type) {
+            case 'memory':
+                startMemory();
+                break;
+            case 'truefalse':
+                startTrueFalse();
+                break;
+            case 'translate':
+                startTranslate();
+                break;
+            case 'reading':
+                startReading();
+                break;
+            case 'grammar':
+                startGrammar();
+                break;
+        }
+    }
+
+    // Lade Sterne beim Start
+    loadStars();
+</script>
+```
+
+</body>
+</html>
