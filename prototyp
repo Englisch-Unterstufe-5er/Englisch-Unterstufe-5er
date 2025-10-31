@@ -345,12 +345,12 @@
         { english: "white", german: "weiß" }
         { english: "purple", german: "lila" }
         { english: "orange", german: "orange" }
-        { english: "bird", german: "vogel" }
-        { english: "fish", german: "fisch" }
-        { english: "animal", german: "tier" }
-        { english: "mouse", german: "maus" }
-        { english: "horse", german: "pferd" }
-        { english: "cow", german: "kuh" }
+        { english: "bird", german: "Vogel" }
+        { english: "fish", german: "Fisch" }
+        { english: "animal", german: "Tier" }
+        { english: "mouse", german: "Maus" }
+        { english: "horse", german: "Pferd" }
+        { english: "cow", german: "Kuh" }
         { english: "sheep", german: "Schaf" }
         { english: "frog", german: "Frosch" }
         { english: "wolf", german: "Wolf" }
