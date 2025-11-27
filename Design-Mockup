@@ -251,7 +251,7 @@
         <div class="welcome-text">Es begleitet dich beim Lernen</div>
         <div class="pet-grid">
             <button class="pet-opt" onclick="pickPet('🦊','Finn der Fuchs',this)">🦊</button>
-            <button class="pet-opt" onclick="pickPet('🐶','Bello der Hund',this)">🐶</button>
+            <button class="pet-opt" onclick="pickPet('🐶','Elija der Hund',this)">🐶</button>
             <button class="pet-opt" onclick="pickPet('🐱','Mia die Katze',this)">🐱</button>
             <button class="pet-opt" onclick="pickPet('🦉','Olli die Eule',this)">🦉</button>
             <button class="pet-opt" onclick="pickPet('🐧','Pino Pinguin',this)">🐧</button>
